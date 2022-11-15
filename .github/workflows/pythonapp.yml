@@ -19,4 +19,4 @@ jobs:
         pip install pylint
     - name: Run Pylint
       run: |
-        python lint.py --path ./srcs --threshold 1.5
+        python lint.py --path ./src/lambdas/modify_cloudtrail --threshold 1.5

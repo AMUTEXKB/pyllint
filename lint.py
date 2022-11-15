@@ -12,7 +12,7 @@ parser.add_argument('-p',
                     help='path to directory you want to run pylint | '
                          'Default: %(default)s | '
                          'Type: %(type)s ',
-                    default='./src',
+                    default='./src/lambdas/modify_cloudtrail',
                     type=str)
 
 parser.add_argument('-t',
@@ -20,7 +20,7 @@ parser.add_argument('-t',
                     help='score threshold to fail pylint runner | '
                          'Default: %(default)s | '
                          'Type: %(type)s ',
-                    default=7,
+                    default=1.3,
                     type=float)
 
 args = parser.parse_args()
